@@ -1,0 +1,214 @@
+#loginPage {
+    color: rgb(37, 59, 97);
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(37, 59, 97);
+    }
+
+    h3 {
+        color: rgb(37, 59, 97);
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+
+        .main {
+            width: 450px;
+            background-color: rgba(37, 59, 97, 0.1);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            padding: 30px;
+
+            a {
+                color: rgb(37, 59, 97);
+                font-weight: 700;
+            }
+
+            .logInAs {
+                margin-bottom: 30px;
+
+                label {
+                    display: inline-block;
+                    cursor: pointer;
+                    height: 20px;
+                    margin-bottom: 5px;
+                    display: inline-flex;
+                    align-items: center;
+
+                    .active_box {
+                        height: 100%;
+                        width: 20px;
+                        background-color: #fff;
+                        margin-right: 10px;
+                        border-radius: 100%;
+                        -webkit-border-radius: 100%;
+                        -moz-border-radius: 100%;
+                        -ms-border-radius: 100%;
+                        -o-border-radius: 100%;
+                        border: 1px solid rgba(37, 59, 97, 1);
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            height: 100%;
+                            width: 100%;
+                            background-color: rgba(37, 59, 97, 1);
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            border-radius: 100%;
+                            -webkit-border-radius: 100%;
+                            -moz-border-radius: 100%;
+                            -ms-border-radius: 100%;
+                            -o-border-radius: 100%;
+                            transform-origin: center;
+                            transform: scale(.3);
+                            -webkit-transform: scale(.3);
+                            -moz-transform: scale(.3);
+                            -ms-transform: scale(.3);
+                            -o-transform: scale(.3);
+                            transition: .2s;
+                            -webkit-transition: .2s;
+                            -moz-transition: .2s;
+                            -ms-transition: .2s;
+                            -o-transition: .2s;
+                        }
+                    }
+                }
+
+                input[type="radio"] {
+                    display: none;
+                }
+
+                input[type="radio"]:checked+label {
+                    background-color: rgba(167, 91, 91, 0);
+
+                    .active_box {
+                        &::after {
+                            transform: scale(1);
+                            -webkit-transform: scale(1);
+                            -moz-transform: scale(1);
+                            -ms-transform: scale(1);
+                            -o-transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+
+            .email {
+                margin-bottom: 15px;
+
+                label {
+                    color: rgb(37, 59, 97);
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    display: inline-block;
+                }
+
+                input[type=email] {
+                    display: block;
+                    width: 100%;
+                    font-size: 18px;
+                    border: 1px solid rgba(37, 59, 97, .4);
+                    background-color: rgba(37, 59, 97, 0);
+                    outline: none;
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                    -ms-transition: .2s;
+                    -o-transition: .2s;
+                    padding: 5px;
+                    color: rgb(37, 59, 97);
+
+
+                    &:focus {
+                        border: 1px solid rgba(37, 59, 97, 1);
+                        background-color: rgba(37, 59, 97, .2);
+
+                    }
+
+                }
+            }
+
+            .password {
+                margin-bottom: 50px;
+
+                label {
+                    color: rgb(37, 59, 97);
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    display: inline-block;
+                }
+
+                input[type=password] {
+                    display: block;
+                    width: 100%;
+                    font-size: 18px;
+                    border: 1px solid rgba(37, 59, 97, .4);
+                    background-color: rgba(37, 59, 97, 0);
+                    outline: none;
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                    -ms-transition: .2s;
+                    -o-transition: .2s;
+                    padding: 5px;
+                    color: rgb(37, 59, 97);
+
+
+                    &:focus {
+                        border: 1px solid rgba(37, 59, 97, 1);
+                        background-color: rgba(37, 59, 97, .2);
+
+                    }
+                }
+            }
+
+            .submit {
+                margin-bottom: 30px;
+
+                button {
+                    display: block;
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 6px;
+                    font-weight: 700;
+                    background: transparent;
+                    border: none;
+                    border: 1px solid rgba(37, 59, 97, 0.4);
+                    cursor: pointer;
+                    color: rgb(37, 59, 97);
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                    -ms-transition: .2s;
+                    -o-transition: .2s;
+
+
+
+                    &:hover {
+                        background-color: rgba(37, 59, 97, 0.1);
+                    }
+                }
+            }
+
+        }
+    }
+}
