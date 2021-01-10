@@ -1,0 +1,67 @@
+.input-field {
+	@include flex;
+	justify-content: flex-start;
+	margin: 1.5rem;
+
+	label {
+		width: 20%;
+		text-transform: capitalize;
+		padding: 0.5rem;
+		font-size: 20px;
+		background-color: #ddd;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+
+	input {
+		width: 70%;
+		height: 43px;
+		font-size: 16px;
+		background-color: #eee;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		border: none;
+		outline: none;
+		padding: 0 1rem;
+
+		&::placeholder {
+			color: #aaa;
+		}
+	}
+
+	&.dropdown {
+		display: inline-block;
+		position: relative;
+		margin: 0 1.5rem 1.5rem;
+
+		&::after {
+			content: '\203A';
+			font-size: 30px;
+			position: absolute;
+			top: 50%;
+			right: 5px;
+			transform: translateY(-50%) rotate(90deg);
+			pointer-events: none;
+			color: #999;
+		}
+	}
+
+	select {
+		appearance: none;
+		outline: none;
+		border: none;
+		background-color: #ddd;
+		border-radius: 5px;
+		font-size: 18px;
+		padding: 0.5rem 1.2rem 0.5rem 1rem;
+		color: #333;
+
+		option {
+			display: inline-block;
+			background-color: #ddd;
+			font-size: 18px;
+			color: black;
+			text-transform: capitalize;
+		}
+	}
+}
